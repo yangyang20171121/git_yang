@@ -11,7 +11,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-//    @RequestMapping("/find/{id}")
+@RequestMapping("/find/{id}")
     @GetMapping
     public User findUserById(@PathVariable int id){
         return userService.selectUserById(id);
@@ -68,5 +68,9 @@ public class UserController {
         userService.transferMoney(count, id1, id2);
         return "transfer success";
 
+    }
+    @RequestMapping("/test")
+    public String getInfo(@RequestParam("name") String name){
+        return "hello,"+name;
     }
 }
