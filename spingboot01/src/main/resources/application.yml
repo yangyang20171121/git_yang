@@ -1,0 +1,16 @@
+server:
+ port: 8081
+
+people:
+   lastName: yangyang
+   age: 18
+   boss: false
+   birth: 1994/01/11
+   maps: {address: yichang,k2: 20000}
+   lists:
+     - dog
+     - cat
+     - pig
+   dog:
+      name: huahua
+      age: 2
