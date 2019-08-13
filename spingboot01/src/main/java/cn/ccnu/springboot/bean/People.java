@@ -9,8 +9,9 @@ import java.util.Map;
 
 /**
  * 将配置文件中每个属性的值，映射到这个组件中
- *@ConfigurationProperties 注解告诉SpringBoot将该类中的属性的值和配置文件中的配置信息进行绑定
+ *@ConfigurationProperties 注解告诉SpringBoot将该类中的属性的值和配置文件中的配置信息进行绑定，
  * prefix = "people" 指明配置文件哪个下的属性进行一一映射
+ * @ConfigurationProperties默认从全局配置文件中获取值
  *
  * 只有这个组件是容器中的组件，才能使用容器提供的@ConfigurationProperties功能，所以加上@Component注解
  */
