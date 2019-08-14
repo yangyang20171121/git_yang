@@ -29,6 +29,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--引入JQuery的webjar 在访问时写webjars下的资源名称即可-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.4.1</version>
+        </dependency>
     </dependencies>
 
     <build>
