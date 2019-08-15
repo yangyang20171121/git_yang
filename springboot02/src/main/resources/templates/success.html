@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>weclome</title>
+</head>
+<body>
+<h1>成功！</h1>
+<h1>失败是成功之母</h1>
+<div th:text="${hello}"></div>
+<!--th:utext不会转义 h1以大标题的形式显示-->
+<div th:utext="${hello}"></div>
+<!--取List中的值-->
+<!--th:each每次遍历都会生成当前这个标签 3个h4-->
+<h4 th:text="${user}" th:each="user:${users}"></h4>
+
+<h4>
+    <span th:each="user:${users}"> [[${user }]] </span>
+</h4>
+
+</body>
+</html>
