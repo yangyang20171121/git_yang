@@ -44,10 +44,12 @@ public class EmployeeDao {
 	}
 	
 	public Employee get(Integer id){
+
 		return employees.get(id);
 	}
 	
 	public void delete(Integer id){
+
 		employees.remove(id);
 	}
 }
